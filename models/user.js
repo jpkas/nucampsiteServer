@@ -6,6 +6,14 @@ const Schema = mongoose.Schema;
 
 
 const userSchema = new Schema({
+    firstname:{
+        type: String,
+        default : false
+    },
+    lastname : {
+        type: String,
+        default : false
+    },
     admin: {
         type: Boolean,
         default: false
